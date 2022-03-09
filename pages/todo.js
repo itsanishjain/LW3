@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import Form from '../components/Form';
 
 import styles from '../styles/Todo.module.css'
 
@@ -50,9 +51,9 @@ export default function Todo() {
     }
     return (
         <div>
+            <Form />
             <form className={styles.mainFrom}>
                 <input value={task} onChange={handleChange} placeholder='add todo' />
-
 
                 <button onClick={handleSubmit}>Add Todo</button>
                 {
